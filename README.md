@@ -1,1 +1,1 @@
-# hope-hacks
+# Hope Hacks Group 4
