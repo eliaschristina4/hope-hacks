@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CheckMate</title>
+</head>
+<body>
+    <header>
+        <h1>CheckMate</h1>
+        <h2>Here to help you avoid grammar mistakes and learn from them. Use the textbox below to check your writing.</h2>
+    </header>
+
+    <main>
+        <section id="input-output-container">
+            <div id="input-div">
+                <input type="text" id="content-input">
+            </div>
+
+            <div id="btn-container">
+                <button id="check-content-btn">Check</button>
+                <button id="save-content-btn">Save</button>
+            </div>
+
+            <div id="output-div">
+                <input type="text" id="content-output" readonly>
+            </div>
+        </section>
+
+        <!-- <br><br><br> -->
+    
+
+        <table  id="table"> 
+            <thead>
+                <th>ID</th>
+                <th>Content</th>
+                <th>Date Added</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody><!--dynamical insert content here using js, this is just for show-->
+                <td>1</td>
+                <td>I went to the store today to buy groceries.</td>
+                <td>January 1, 2000</td>
+                <td><button>Edit</button></td>
+                <td><button>Edit</button></td>
+            </tbody>
+        </table>
+
+        <section  id="update-row">
+            <label>Content:</label>
+            <input type="text" id="update-content-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    
+</body>
+</html>
