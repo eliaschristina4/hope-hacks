@@ -14,25 +14,25 @@
     </header>
 
     <main>
+        <!-- where the user will input their text -->
         <section id="input-output-container">
             <div id="input-div">
                 <input type="text" id="content-input">
             </div>
-
+        <!-- buttons to check the grammar or save to table -->
             <div id="btn-container">
                 <button id="check-content-btn">Check</button>
                 <button id="save-content-btn">Save</button>
             </div>
 
+        <!-- where the api will output grammar feedback -->
             <div id="output-div">
                 <input type="text" id="content-output" readonly>
             </div>
         </section>
-
-        <!-- <br><br><br> -->
     
-
-        <table  id="table"> 
+        <!-- SAVE TABLE: defaults to hidden but will toggle with JS -->
+        <table hidden id="table"> 
             <thead>
                 <th>ID</th>
                 <th>Content</th>
@@ -40,7 +40,7 @@
                 <th>Delete</th>
                 <th>Edit</th>
             </thead>
-            <tbody><!--dynamical insert content here using js, this is just for show-->
+            <tbody><!--dynamical insert content here using js, what's below is just for show-->
                 <td>1</td>
                 <td>I went to the store today to buy groceries.</td>
                 <td>January 1, 2000</td>
@@ -49,7 +49,8 @@
             </tbody>
         </table>
 
-        <section  id="update-row">
+        <!-- EDIT/UPDATE TABLE CONTENT: defaults to hidden but will toggle with JS -->
+        <section hidden  id="update-row">
             <label>Content:</label>
             <input type="text" id="update-content-input">
             <button id="update-row-btn">Update</button>
