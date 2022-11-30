@@ -19,7 +19,7 @@ function runGrammarChecker(contentToCheck){
       url: 'https://grammarbot.p.rapidapi.com/check',
       headers: {
         'content-type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Key': '8b6d21335emsh214b124ff3c14a7p1cad53jsna29e7e1a2155',
+        'X-RapidAPI-Key': 'process.env.APIKEY',
         'X-RapidAPI-Host': 'grammarbot.p.rapidapi.com'
       },
       data: encodedParams
