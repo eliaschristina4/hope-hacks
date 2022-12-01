@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gc.css" />
+    <script
+      src="https://kit.fontawesome.com/2e27ff4ea7.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>CheckMate</title>
+  </head>
+  <body>
+    <header>
+      <h1>CheckMate</h1>
+      <h2>
+        Here to help you avoid grammar mistakes and learn from them. Use the
+        textbox below to check your writing.
+      </h2>
+    </header>
+    <!--Hamburger Nav Bar-->
+    <label>
+      <input type="checkbox" />
+      <span class="menu"> <span class="hamburger"></span> </span>
+      <ul>
+        <li><a href="/pages/home.html">Home</a></li>
+        <li><a href="/pages/donations.html">Donations</a></li>
+        <li><a href="/pages/gc.html">CheckMate</a></li>
+      </ul>
+    </label>
+
+    <main>
+      <!-- where the user will input their text -->
+      <section id="input-output-container">
+        <div id="input-div">
+          <input type="text" id="content-input" />
+        </div>
+        <!-- buttons to check the grammar or save to table -->
+        <div id="btn-container">
+          <button id="check-content-btn">Check</button>
+          <button id="save-content-btn">Save</button>
+        </div>
+
+        <!-- where the api will output grammar feedback -->
+        <div id="output-div">
+          <input type="text" id="content-output" readonly />
+        </div>
+      </section>
+
+      <!-- SAVE TABLE: defaults to hidden but will toggle with JS -->
+      <table hidden id="table">
+        <thead>
+          <th>ID</th>
+          <th>Content</th>
+          <th>Date Added</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </thead>
+        <tbody>
+          <!--dynamical insert content here using js, what's below is just for show-->
+          <td>1</td>
+          <td>I went to the store today to buy groceries.</td>
+          <td>January 1, 2000</td>
+          <td><button>Edit</button></td>
+          <td><button>Edit</button></td>
+        </tbody>
+      </table>
+
+      <!-- EDIT/UPDATE TABLE CONTENT: defaults to hidden but will toggle with JS -->
+      <section hidden id="update-row">
+        <label>Content:</label>
+        <input type="text" id="update-content-input" />
+        <button id="update-row-btn">Update</button>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-basic">
+        <div class="social">
+          <a href="https://www.facebook.com/"
+            ><i class="fa-brands fa-facebook"></i></a
+          ><a href="https://twitter.com/"
+            ><i class="fab fa-twitter fa-lg"></i
+          ></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="/pages/home.html">Home</a></li>
+          <li class="list-inline-item">
+            <a href="/pages/gc.html">CheckMate!</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="/pages/donations.html">Donations</a>
+          </li>
+        </ul>
+        <p class="copyright">CheckMate! © 2022</p>
+      </div>
+    </footer>
+  </body>
+</html>
