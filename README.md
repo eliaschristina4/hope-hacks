@@ -1,5 +1,5 @@
 # CheckMate
-Short description of what the project is.
+CheckMate is a free grammar checking application that allows users to input their sentences to check for grammar mistakes. When users enter their sentences it then corrects them and recommends new word substitutions and more. CheckMate is currently free, but is 100% nonprofit and continues to thrive based on donations of our sponsers and users. We plan to make more educational use applications in the future. 
 
 ## Process and Approach
 Write some stuff here ... 
