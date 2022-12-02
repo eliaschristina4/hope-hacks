@@ -1,0 +1,251 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #A3CE8D;
+}
+
+
+/* Nav Bar */
+#menu__toggle {
+    opacity: 0;
+}
+
+#menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+    left: 0 !important;
+}
+
+.menu__btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+}
+
+.menu__btn>span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn>span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+}
+
+.menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+}
+
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+/* Hero Image */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Text styles */
+    text-align: center;
+    color: white;
+    /* ADD THIS LINE */
+
+    /* Background styles */
+    background-image: url(/Images/Check\ Mate!-1\ \(5\).png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Text styles */
+    color: white;
+    /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+
+    /* Border styles */
+    border: 3px solid white;
+    /* CHANGE THIS LINE */
+    border-radius: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: transparent;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    height: 35px;
+    opacity: 1;
+}
+
+.footer-basic {
+    padding: 0px 0;
+    background-color: transparent;
+    color: #000000;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.footer-basic ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-basic li {
+    padding: 0 10px;
+    text-align: center;
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-basic ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-basic ul a:hover {
+    opacity: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.footer-basic .social {
+    text-align: right;
+    padding-bottom: 25px;
+    vertical-align: middle;
+}
+
+.footer-basic .social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: right;
+    margin: 0 8px;
+    color: rgb(0, 0, 0);
+    opacity: 0.75;
+    vertical-align: middle;
+
+}
+
+.footer-basic .social>a:hover {
+    opacity: 0.9;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.footer-basic .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
