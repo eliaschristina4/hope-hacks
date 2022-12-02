@@ -6,10 +6,39 @@ Grey - #93B3B6
 
 */
 
-header, main, /* table */ {
+/* General styles */
+
+body {
+    background-color: #A3CE8D;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    
+}
+
+h2 {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+    padding-bottom: 40px;
+}
+
+/* table, */  main {
     margin: 50px auto;
     text-align: center;
 }
+
+/* input/output - textareas */
 
 #input-output-container {
     display: flex;
@@ -21,7 +50,31 @@ header, main, /* table */ {
     margin: 10px 50px;
     height: 200px;
     width: 400px;
+
+    border: 5px solid #93B3B6;
+    border-radius: 25px;
+    background-color: white;
 }
+
+textarea::placeholder {
+    color: #0B1048;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+textarea:valid {
+    color: #0B1048;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.dynamic { 
+    color: #0B1048;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+/* Buttons */
 
 #btn-container {
     justify-content: center;
@@ -30,8 +83,17 @@ header, main, /* table */ {
 #btn-container button {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 40px auto;
     justify-content: center;
+    padding: 10px;
+
+    background-color: #0B1048;
+    color: #A3CE8D;
+    border: 2px solid #0B1048;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 /*

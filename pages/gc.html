@@ -12,9 +12,11 @@
     <title>CheckMate!</title>
 </head>
 <body>
-    <header>
-        <h1>CheckMate!</h1>
-        <h2>Here to help you avoid writing mistakes and learn from them. Use the textbox below to check your grammar.</h2>
+    <header> 
+      <a href="home.html">
+        <img src="../Images/Check Mate!-1 (1).png" alt="CheckMate! Logo">
+      </a>
+      <h1 hidden>CheckMate!</h1>
     </header>
     <!--Hamburger Nav Bar-->
     <div class="hamburger-menu">
@@ -24,27 +26,28 @@
         </label>
 
         <ul class="menu__box">
-            <li><a class="menu__item" href="/pages/home.html">Home</a></ul>li>
+            <li><a class="menu__item" href="/pages/home.html">Home</a></li>
             <li><a class="menu__item" href="/pages/gc.html">CheckMate!</a></li>
             <li><a class="menu__item" href="/pages/donations.html">Donations</a></li>
         </ul>
     </div>
     <main> 
+      <h2>Here to help you avoid writing mistakes and learn from them. Use the textbox below to check your grammar.</h2>
         <!-- where the user will input their text -->
         <section id="input-output-container">
             <div id="input-div">
-                <textarea type="text" id="content-input" wrap="soft"></textarea>
+                <textarea type="text" id="content-input" wrap="soft" placeholder="Enter text here." required></textarea>
             </div>
         <!-- buttons to check the grammar or save to table -->
             <div id="btn-container">
-                <button id="check-content-btn">Check</button>
-                <button id="reload-btn">Refresh</button>
+                <button id="check-content-btn">CHECK</button>
+                <button id="reload-btn">REFRESH</button>
                 <!-- <button id="save-content-btn">Save</button> -->
             </div>
 
         <!-- where the api will output grammar feedback -->
             <div id="output-div">
-                <textarea type="text" id="content-output" wrap="soft" readonly></textarea>
+                <textarea type="text" id="content-output" wrap="soft" placeholder="See feedback here." readonly></textarea>
             </div>
         </section>
     

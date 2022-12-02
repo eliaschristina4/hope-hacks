@@ -31,7 +31,7 @@ function runGrammarChecker(contentToCheck){
       method: 'POST',
       headers: {
         'content-type': 'application/x-www-form-urlencoded', 
-        'X-RapidAPI-Key': process.env.API_KEY, // won't let me use this bc process undefined? have to put the actual API Key which is then exposed on github ugh
+        'X-RapidAPI-Key': '8b6d21335emsh214b124ff3c14a7p1cad53jsna29e7e1a2155',// process.env.API_KEY, // won't let me use this bc process undefined? have to put the actual API Key which is then exposed on github ugh
         'X-RapidAPI-Host': 'grammarbot.p.rapidapi.com'
       },
       body: encodedParams
@@ -45,7 +45,9 @@ function runGrammarChecker(contentToCheck){
             console.log(feedback.matches[0].message); // IT WORKEDDDDDD OMGGGGG
             // insert the message into the DOM
             if (feedback.matches[0].message) {
-                document.querySelector('#content-output').value = feedback.matches[0].message; // works yeehaw
+                let message = document.querySelector('#content-output');
+                message.value = feedback.matches[0].message;  // works yeehaw
+                message.classList.add('dynamic');
             } else if (feedback.matches[0].message == undefined) {
                 document.querySelector('#content-output').value = 'There was a problem evaluating the text. Please try again.' // this doesn't work womp. the api is v picky !!!! COME BACK IF TIME
             }
