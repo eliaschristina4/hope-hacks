@@ -10,29 +10,30 @@
 <body>
     <header>
         <h1>CheckMate</h1>
-        <h2>Here to help you avoid grammar mistakes and learn from them. Use the textbox below to check your writing.</h2>
+        <h2>Here to help you avoid writing mistakes and learn from them. Use the textbox below to check your grammar.</h2>
     </header>
 
-    <main>
+    <main> 
         <!-- where the user will input their text -->
         <section id="input-output-container">
             <div id="input-div">
-                <input type="text" id="content-input">
+                <textarea type="text" id="content-input" wrap="soft"></textarea>
             </div>
         <!-- buttons to check the grammar or save to table -->
             <div id="btn-container">
                 <button id="check-content-btn">Check</button>
-                <button id="save-content-btn">Save</button>
+                <button id="reload-btn">Refresh</button>
+                <!-- <button id="save-content-btn">Save</button> -->
             </div>
 
         <!-- where the api will output grammar feedback -->
             <div id="output-div">
-                <input type="text" id="content-output" readonly>
+                <textarea type="text" id="content-output" wrap="soft" readonly></textarea>
             </div>
         </section>
     
         <!-- SAVE TABLE: defaults to hidden but will toggle with JS -->
-        <table hidden id="table"> 
+        <!-- <table hidden id="table"> 
             <thead>
                 <th>ID</th>
                 <th>Content</th>
@@ -40,23 +41,23 @@
                 <th>Delete</th>
                 <th>Edit</th>
             </thead>
-            <tbody><!--dynamical insert content here using js, what's below is just for show-->
+            <tbody>
                 <td>1</td>
                 <td>I went to the store today to buy groceries.</td>
                 <td>January 1, 2000</td>
-                <td><button>Edit</button></td>
+                <td><button>Delete</button></td>
                 <td><button>Edit</button></td>
             </tbody>
-        </table>
+        </table> -->
 
         <!-- EDIT/UPDATE TABLE CONTENT: defaults to hidden but will toggle with JS -->
-        <section hidden id="update-row">
+        <!-- <section hidden id="update-row">
             <label>Content:</label>
             <input type="text" id="update-content-input">
             <button id="update-row-btn">Update</button>
-        </section>
+        </section> -->
     </main>
     
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
