@@ -42,15 +42,17 @@ function runGrammarChecker(contentToCheck){
         .then(json => {
             feedback = json;
             console.log(json);
-            console.log(feedback.matches[0].message); // IT WORKEDDDDDD OMGGGGG
             // insert the message into the DOM
-            if (feedback.matches[0].message) {
-                let message = document.querySelector('#content-output');
-                message.value = feedback.matches[0].message;  // works yeehaw
-                message.classList.add('dynamic');
-            } else if (feedback.matches[0].message == undefined) {
-                document.querySelector('#content-output').value = 'There was a problem evaluating the text. Please try again.' // this doesn't work womp. the api is v picky !!!! COME BACK IF TIME
-            }
+            let message = document.querySelector('#content-output');
+            if (feedback.matches.length === 0){
+                message.value = 'Congratulations! No errors found.'
+            } else if (feedback.matches[0].message){
+                for (let i = 0; i < feedback.matches.length; i++){
+                    console.log(feedback.matches[i].message);
+                    message.value +=  `${feedback.matches[i].message} `;
+                }
+            } 
+            message.classList.add('dynamic');
         })
         .catch(err => console.error('error:' + err));
-};
+}; // could make this app better by putting the error in a list and then possible replacement as well. say where the error is, why it's wrong, and replacement suggestions.

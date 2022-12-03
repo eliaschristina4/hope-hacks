@@ -100,7 +100,7 @@ textarea:valid {
     padding: 10px;
 
     background-color: #0B1048;
-    color: #A3CE8D;
+    color: white; /* #A3CE8D; */
     border: 2px solid #0B1048;
     border-radius: 15px;
     font-size: 1em;
