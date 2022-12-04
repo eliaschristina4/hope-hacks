@@ -2,7 +2,7 @@
 // basic concept: check button --> send to api --> return message from API --> enter that into the output textarea
 
 
-/* REFRESH BTN EVENT LISTENER that reload the window so you can enter another sentence */
+/* REFRESH BTN EVENT LISTENER that reload the window so you can enter another sentence to check */
 document.querySelector('#reload-btn').addEventListener('click', (event) => {
     window.location.reload();
 });
@@ -25,8 +25,6 @@ function runGrammarChecker(contentToCheck){
     
     const url = 'https://grammarbot.p.rapidapi.com/check';
     
-    let feedback = "";
-    
     const options = {
       method: 'POST',
       headers: {
@@ -40,7 +38,7 @@ function runGrammarChecker(contentToCheck){
     fetch(url, options)
         .then(res => res.json())
         .then(json => {
-            feedback = json;
+            let feedback = json;
             console.log(json);
             // insert the message into the DOM
             let message = document.querySelector('#content-output');
@@ -55,4 +53,9 @@ function runGrammarChecker(contentToCheck){
             message.classList.add('dynamic');
         })
         .catch(err => console.error('error:' + err));
-}; // could make this app better by putting the error in a list and then possible replacement as well. say where the error is, why it's wrong, and replacement suggestions.
+}; 
+
+
+
+
+// in future, could make this app better by putting the error in a list and then possible replacement as well. say where the error is, why it's wrong, and replacement suggestions.
