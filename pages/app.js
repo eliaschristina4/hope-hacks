@@ -1,67 +1,25 @@
+const { StepFunctions } = require("aws-sdk");
+const cors = require("cors");
 const express = require("express");
+
 const app = express();
-const {
-  addOrUpdateCustomerer,
-  getCustomerers,
-  deleteCustomerer,
-  getCustomererById,
-} = require("./dynamo");
+const { addOrUpdateCustomer } = require("./dynamo");
 
 app.use(express.json());
+app.use(cors());
+
+//! above we are importing every module and function that is involved with the functions we will use
 
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-app.get("/customerers", async (req, res) => {
+app.post("/donate", async (req, res) => {
+  console.log("donation called", req.body);
+  const donation = req.body;
   try {
-    const customerers = await getCustomerers();
-    res.json(customerers);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ err: "Something went wrong" });
-  }
-});
-
-app.get("/customerers/:id", async (req, res) => {
-  const id = req.params.id;
-  try {
-    const customerer = await getCustomererById(id);
-    res.json(customerer);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ err: "Something went wrong" });
-  }
-});
-
-app.post("/customerers", async (req, res) => {
-  const customerer = req.body;
-  try {
-    const newCustomerer = await addOrUpdateCustomerer(customerer);
-    res.json(newCustomerer);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ err: "Something went wrong" });
-  }
-});
-
-app.put("/customerers/:id", async (req, res) => {
-  const customerer = req.body;
-  const { id } = req.params;
-  customerer.id = id;
-  try {
-    const newCustomerer = await addOrUpdateCustomerer(customerer);
-    res.json(newCustomerer);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ err: "Something went wrong" });
-  }
-});
-
-app.delete("/customerers/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    res.json(await deleteCustomerer(id));
+    const newCustomer = await addOrUpdateCustomer(donation);
+    res.json(newCustomer);
   } catch (err) {
     console.error(err);
     res.status(500).json({ err: "Something went wrong" });
@@ -70,5 +28,5 @@ app.delete("/customerers/:id", async (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`listening on port port`);
+  console.log(`listening on port ${port}`);
 });

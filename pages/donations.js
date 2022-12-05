@@ -50,24 +50,32 @@
 // });
 // const { addOrUpdateCustomer } = require("./dynamo");
 
-var formJSON;
+//?The below function is used to take the table output, convert it to a json format, then send it to the api
 
 function handleFormSubmit(event) {
-  event.preventDefault();
+  // event.preventDefault(); //? This keeps the page from refreashing automatically when submit is hit, and is for testing purposes
 
-  const data = new FormData(event.target);
-
+  const data = new FormData(event.target); //? Targets the data of the form
   const formJSON = Object.fromEntries(data.entries());
-  // this will allow multi-selects to show all opt-ins in the json
-  formJSON.optIns = data.getAll("optIns");
+  formJSON.optIns = data.getAll("optIns"); //? this will allow multi-selects with the 'optIns' name to show all opt-ins in the json
+  // console.log(formJSON);
+  //!send to app.js(api) and call fetch
+  fetch("http://127.0.0.1:3000/donate", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formJSON),
+  })
+    .then((res) => res.json()) //This sends the json data
+    .then((data) => console.log(data)) //console logs the json
+    .catch(console.error()); //if there is an error, this will tell what the cause is
 
-  const results = document.querySelector(".results pre");
-  results.innerText = JSON.stringify(formJSON, null, 2);
+  //? the below code was used to test the function and display the output json below the form
+  // const results = document.querySelector(".results pre");
+  // results.innerText = JSON.stringify(formJSON, null, 2);
   // addOrUpdateCustomer(formJSON);
 }
 
 const form = document.querySelector(".donation-box");
-form.addEventListener("submit", handleFormSubmit);
-
-// module.exports = { formJSON };
-console.log(formJSON);
+form.addEventListener("submit", handleFormSubmit); //? this runs the function when the submit button is clicked

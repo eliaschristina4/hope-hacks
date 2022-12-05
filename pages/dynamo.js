@@ -1,12 +1,15 @@
 const AWS = require("aws-sdk");
 require("dotenv").config();
-const formJSON = require("./donations");
+// const formJSON = require("./donations");
 AWS.config.update({
-  region: "us-east-1",
-  accessKeyId: "AKIAQ7G4MIBQEQEZTLHQ",
-  secretAccessKey: "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",
+  region: process.env.AWS_DEFAULT_REGION,
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 });
 
+//? Above we are importing the modules that will be used as well as telling the functions what database to connect to
+
+//? Below pulling the DynamoDB client module along with directing the code on what table to use
 const dynamoClient = new AWS.DynamoDB.DocumentClient();
 const TABLE_NAME = "client-saves";
 const getCustomers = async () => {
@@ -17,16 +20,7 @@ const getCustomers = async () => {
   return customers;
 };
 
-const getCustomerById = async (id) => {
-  const params = {
-    TableName: TABLE_NAME,
-    Key: {
-      id,
-    },
-  };
-  return await dynamoClient.get(params).promise();
-};
-
+//? This is the function that will be used by the table function to add the information to the database
 const addOrUpdateCustomer = async (customer) => {
   const params = {
     TableName: TABLE_NAME,
@@ -35,31 +29,9 @@ const addOrUpdateCustomer = async (customer) => {
   return await dynamoClient.put(params).promise();
 };
 
-const deleteCustomer = async (id) => {
-  const params = {
-    TableName: TABLE_NAME,
-    Key: {
-      id,
-    },
-  };
-  return await dynamoClient.delete(params).promise();
-};
-
+//? Here we are exporting the functions so that they can be utilized in app.js for CRUD functions
 module.exports = {
   dynamoClient,
   getCustomers,
-  getCustomerById,
   addOrUpdateCustomer,
-  deleteCustomer,
 };
-
-const test1 = {
-  id: "1",
-  fName: "Jack",
-  lName: "Gurling",
-  email: "email@gmail.com",
-  Amount: "100",
-  occurance: "One-Time",
-  optIns: ["Email Receipt", "Anonymous", "Email List"],
-};
-addOrUpdateCustomer(formJSON);
