@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;    
+}
+
 #menu__toggle {
   opacity: 0;
 }
