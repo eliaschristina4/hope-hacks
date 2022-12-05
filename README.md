@@ -1,25 +1,15 @@
-![Logo](/images/CheckMate!-1.png)
+![Logo](/Images/CheckMate!-1.png)
 # CheckMate
 
-Ever wanted to check your grammar in a way that can benefit you or maybe you wanna make sure that you don't have any mistakes well with **Checkmate** you can make sure that your worry about having mistakes in an essay or long-formulated paragraphs can disappear or just be edited by you, checkmate is there to help you whenever you need help with your grammar, unfortunately, **checkmate** can't teach your pet to talk but we can make that you are ready and prepared to ace that next English assignment or even write an E-mail to your grandma who doesn't know how to use a computer.
+Ever wanted to check your grammar in a way that can benefit you or maybe you wanna make sure that you don't have any mistakes well with **Checkmate** you can make sure that your worry about having mistakes in an essay or long-formulated paragraphs can disappear or just be edited by you, checkmate is there to help you whenever you need help with your grammar, unfortunately, **checkmate** can't teach your pet to talk but we can make that you are ready and prepared to ace that next English assignment or even write an E-mail to your grandma who doesn't know how to use a computer. This was created for those that can't always catch the little mistakes in your typing or writing and need that extra help to pinpoint what needs little edits or big edits and we provide all that in this little package just for you.
 
 ## Features
-
 - Process any info inserted and create a response on how to improve your grammar
 - Give suggestions on how to fix your errors
 - Suggestions do vary but are helpful
 - ** Checkmate will not take your info or sell it **
-<!-- Short description of what the project is. -->
-
-Ever wanted to check your grammar in a way that can benefit you or maybe you wanna make sure that you don't have any mistakes well with **Checkmate** you can make sure that your worry about having mistakes in an essay or long-formulated paragraphs can disappear or just be edited by you, checkmate is there to help you whenever you need help with your grammar, unfortunately, **checkmate** can't teach your pet to talk but we can make that you are ready and prepared to ace that next English assignment or even write an E-mail to your grandma who doesn't know how to use a computer. This was created for those that can't always catch the little mistakes in your typing or writing and need that extra help to pinpoint what needs little edits or big edits and we provide all that in this little package just for you.
-
- ## Features
- + Process any info inserted and create a response on how to improve your grammar
- + Give suggestions on how to fix your errors 
- + Suggestions do vary but are helpful
- + ** Checkmate will not take your info or sell it **
  
-## Process and Approach
+<!-- ## Process and Approach -->
 
 <!-- Write some stuff here ...  -->
 
@@ -36,6 +26,7 @@ To Stop the app from working all you wanna do is either stop the live server or 
 * Express.js
 * DynamoDB
 
+## Authors: Group 4
 - Christina Elias - [GitHub](https://github.com/eliaschristina4)
 - Said Guzman Zaragoza - [GitHub](https://github.com/Said-Guzman)
 - Mariah Teasdale - [GitHub](https://github.com/MMTeasdale)
