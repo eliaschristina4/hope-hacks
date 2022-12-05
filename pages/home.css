@@ -93,7 +93,41 @@ body {
     background-color: #CFD8DC;
 }
 
-/* Hero Image */
+
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B1048;
+    animation-name: out;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+
+@keyframes out{
+    0%{
+        opacity: 100%;
+    }
+    30%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0%;
+    }
+    100%{
+        top: 5000px;
+    }
+}
+    /* Hero Image */
 body {
     margin: 0;
     font-family: sans-serif;
