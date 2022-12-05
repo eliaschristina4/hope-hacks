@@ -12,7 +12,7 @@ Ever wanted to check your grammar in a way that can benefit you or maybe you wan
 Write some stuff here ... 
 
 ## Getting Started & Running Our App
-You can clone/download the CheckMate repository onto your machine. After downloading the node packages via your command line interface and if you don't know how to then we got you covered go to your console at the bottom of your VScode and type in ```npm install node```, make sure that you enable the localhost server using ```Node Server.js``` and then you can run the server locally using the live server feature that can be found in the extensions or [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) after doing so you can use the app by inserting your text in the textbox and recieving what needs to be fixed correctly.
+You can clone/download the CheckMate repository onto your machine. After downloading the node packages via your command line interface and if you don't know how to then we got you covered go to your console at the bottom of your VScode and type in ```npm install node```, make sure that you enable the localhost server using ```Node Server.js``` and then you can run the server locally using the live server feature that can be found in the extensions or [Here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) after doing so you can use the app by inserting your text in the textbox and receiving what needs to be fixed correctly.
 
 ## Stopping The App
 To Stop the app from working all you wanna do is either stop the live server or at the bottom, in the console you can do "ctrl" and "C" at the same time on your keyboard to stop the localhost which will stop the server totally and end the app completely.
