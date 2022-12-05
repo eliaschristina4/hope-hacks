@@ -22,7 +22,7 @@ To Stop the app from working all you wanna do is either stop the live server or 
 * Client-side JavaScript
 * Node.js
 * Express.js
-* MongoDB
+* DynamoDB
 
 ### Authors
 * Christina Elias
