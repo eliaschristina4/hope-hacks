@@ -2,6 +2,12 @@
 # CheckMate
 Short description of what the project is.
 
+ ## Features
+ + Process any info inserted and create a response on how to improve your grammar
+ + Give suggestions on how to fix your errors 
+ + Suggestions do vary but are helpful
+ + ** Checkmate will not take your info or sell it **
+ 
 ## Process and Approach
 Write some stuff here ... 
 
