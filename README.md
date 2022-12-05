@@ -1,23 +1,41 @@
+![Logo](/image/Check%20Mate!-1.png)
+
 # CheckMate
-CheckMate is a free grammar checking application that allows users to input their sentences to check for grammar mistakes. When users enter their sentences it then corrects them and recommends new word substitutions and more. CheckMate is currently free, but is 100% nonprofit and continues to thrive based on donations of our sponsers and users. We plan to make more educational use applications in the future. 
+
+Ever wanted to check your grammar in a way that can benefit you or maybe you wanna make sure that you don't have any mistakes well with **Checkmate** you can make sure that your worry about having mistakes in an essay or long-formulated paragraphs can disappear or just be edited by you, checkmate is there to help you whenever you need help with your grammar, unfortunately, **checkmate** can't teach your pet to talk but we can make that you are ready and prepared to ace that next English assignment or even write an E-mail to your grandma who doesn't know how to use a computer.
+
+## Features
+
+- Process any info inserted and create a response on how to improve your grammar
+- Give suggestions on how to fix your errors
+- Suggestions do vary but are helpful
+- ** Checkmate will not take your info or sell it **
+<!-- Short description of what the project is. -->
 
 ## Process and Approach
-Our group set out to create an app that offers something useful in the area of education. We found the GrammarBot API had a lot of potential as something that would be practical and useful for many students and anyone else needing help double-checking their grammar. We initially were only going to create one page with the interface for the third-party app and then create our own first-party app where you could save previous entries. When we continued thinking and talking about it, we decided to built out our fictional organization and include the grammar checker as one of the services they offer, in addition to using donation to help fund educational opportunity for those in need. From there, we decided to include a landing page, our app page and a donation page, which is where we implemented our first-party API to save the information entered into a form.
+
+<!-- Write some stuff here ...  -->
 
 ## Getting Started & Running Our App
-Our final project is deployed and can be found here:
-You can clone/download the CheckMate repository onto your machine using this URL: https://github.com/eliaschristina4/hope-hacks.git. Use your command line interface or terminal to move into the repository (e.g., cd hope-hacks). Once there, download the appropriate node packages in the terminal using npm i(nstall). Then, type npm start in the terminal to open the project.
+
+You can clone/download the CheckMate repository onto your machine. After downloading the node packages via your command line interface and if you don't know how to then we got you covered go to your console at the bottom of your VScode and type in `npm install node`, make sure that you enable the localhost server using `Node Server.js` and then you can run the server locally using the live server feature that can be found in the extensions or [click here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) after doing so you can use the
+
+## Stopping The App
+
+To Stop the app from working all you wanna do is either stop the live server or at the bottom, in the console you can do "ctrl" and "C" at the same time on your keyboard to stop the localhost which will stop the server totally
 
 ## Built Using
-* HTML / CSS
-* Client-side JavaScript
-* Node.js
-* Express.js
-* MySQL
-* DynamoDB
+
+- HTML / CSS
+- Client-side JavaScript
+- Node.js
+- Express.js
+- MySQL
+- DynamoDB
 
 ### Authors: Group 4
-* Christina Elias - [GitHub](https://github.com/eliaschristina4)
-* Said Guzman Zaragoza - [GitHub](https://github.com/Said-Guzman)
-* Mariah Teasdale - [GitHub](https://github.com/MMTeasdale)
-* Elijah Young - [GitHub](https://github.com/ElijahMYoung)
+
+- Christina Elias - [GitHub](https://github.com/eliaschristina4)
+- Said Guzman Zaragoza - [GitHub](https://github.com/Said-Guzman)
+- Mariah Teasdale - [GitHub](https://github.com/MMTeasdale)
+- Elijah Young - [GitHub](https://github.com/ElijahMYoung)
