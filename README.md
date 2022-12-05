@@ -1,4 +1,4 @@
-![Logo](/Images/CheckMate!-1.png)
+![Logo](https://im5.ezgif.com/tmp/ezgif-5-4e754ef82a.gif)
 # CheckMate
 
 Ever wanted to check your grammar in a way that can benefit you or maybe you wanna make sure that you don't have any mistakes well with **Checkmate** you can make sure that your worry about having mistakes in an essay or long-formulated paragraphs can disappear or just be edited by you, checkmate is there to help you whenever you need help with your grammar, unfortunately, **checkmate** can't teach your pet to talk but we can make that you are ready and prepared to ace that next English assignment or even write an E-mail to your grandma who doesn't know how to use a computer. This was created for those that can't always catch the little mistakes in your typing or writing and need that extra help to pinpoint what needs little edits or big edits and we provide all that in this little package just for you.
