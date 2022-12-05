@@ -15,14 +15,14 @@ Write some stuff here ...
 You can clone/download the CheckMate repository onto your machine. After downloading the node packages via your command line interface and if you don't know how to then we got you covered go to your console at the bottom of your VScode and type in ``` npm install node ```, make sure that you enable the localhost server using ```Node Server.js``` and then you can run the server locally using the live server feature that can be found in the extensions or [click here](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) after doing so you can use the 
 
 ## Stopping The App
-jdfnalksdjfna ...
+To Stop the app from working all you wanna do is either stop the live server or at the bottom, in the console you can do "ctrl" and "C" at the same time on your keyboard to stop the localhost which will stop the server totally
 
 ## Built Using
 * HTML / CSS
 * Client-side JavaScript
 * Node.js
 * Express.js
-* MySQL
+* MongoDB
 
 ### Authors
 * Christina Elias
