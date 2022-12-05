@@ -1,3 +1,4 @@
+![Logo](/image/Check%20Mate!-1.png)
 # CheckMate
 Short description of what the project is.
 
