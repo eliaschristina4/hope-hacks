@@ -12,7 +12,7 @@ Ever wanted to check your grammar in a way that can benefit you or maybe you wan
 - ** Checkmate will not take your info or sell it **
 <!-- Short description of what the project is. -->
 
-## Process and Approach
+<!-- ## Process and Approach -->
 
 <!-- Write some stuff here ...  -->
 
