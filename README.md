@@ -27,6 +27,7 @@ To Stop the app from working all you wanna do is either stop the live server or 
 * DynamoDB
 
 ## Authors: Group 4
+
 - Christina Elias - [GitHub](https://github.com/eliaschristina4)
 - Said Guzman Zaragoza - [GitHub](https://github.com/Said-Guzman)
 - Mariah Teasdale - [GitHub](https://github.com/MMTeasdale)
